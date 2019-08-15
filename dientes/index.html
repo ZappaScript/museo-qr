@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Aventura en la Luna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="css/mobile.css">
+
+
+</head>
+<body >
+
+<div  class="Banner theme" id="header-wrap"  >
+<div style="float:left;" class="centered"><img src="../static/img/dientes-logo.png" class="Logo"  id="elLogo"></div>
+
+<div class="centered" id="textHeader"><p>Biolog&#237a</p></div>
+</div>
+<div class="Container_1 scrollarea-invalid " id="contenido" >
+  <div style="padding: 2vw;">
+    <h1 >¿Cómo puedes cuidar tus dientes?</h1>
+
+
+    <div class="text-center">
+      <div>
+        <img src="../static/img/dientes-dientes.png" class="hover-shadow img-rounded" style="width: 75vw;">
+      </div>
+    </div>
+    <br>
+
+
+    <p>
+    En esta exhibición de inmersión, conocerás el consultorio de un odontólogo y las funciones que los odontólogos cumplen para poder cuidar tus dientes.
+    Al entrar, el amigo-guía te explicará qué son los dientes, junto con el por qué y cómo puedes cuidar los tuyos. Conocerás la técnica correcta para cepillarte los dientes, algunas de las enfermedades más comunes y te hablarán sobre la periodontitis. El amigo-guía podría seleccionarte a ti o alguno de tus compañeros para hacerte una prueba en tus dientes incisivos centrales, o podría enseñarte a ti y a tus compañeros la técnica correcta del cepillado en los lavamanos. 
+
+    </p>
+    <hr>    
+    <div class="embed-responsive embed-responsive-4by3" style="text-align: center;">
+    <video controls>
+    <source src="../static/video/dientes.mp4" type="video/mp4">
+    </video>
+   </div>
+  </div>
+
+
+</div>
+
+    <footer class="footer theme" id="footer-warp">
+      <div class="container" >
+      
+    
+        <div class="text-center center-block">
+            
+            
+                <a href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/museitocaracas/" target="_blank"><i class="fa fa-facebook-square fa-3x color-white"></i></a>
+                <a href="https://twitter.com/share?url=https://twitter.com/museitocaracas&amp;text=Ven%20al%20Museo&amp;hashtags=museitocaracas" target="_blank"><i class="fa fa-twitter-square fa-3x color-white"></i></a>
+                <a href="https://www.instagram.com/museitocaracas/"><i class="fa fa-instagram fa-3x color-white"></i></a>
+                <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x color-white"></i></a>
+</div>
+    
+      </div>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+
+
+    <!--<script src="dist/js/swiper.min.js"></script>-->
+    <!-- Initialize Swiper -->
+
+
+<!-- esto debe ser arreglado-->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var divHeight = $('#header-wrap').height(); 
+    $('#contenido').css('margin-top', divHeight+'px');
+    var footerHeight = $('#footer-warp').height(); 
+    $('#contenido').css('padding-bottom', footerHeight + 'px');
+    var paginationHeight = 1.1 * $('#footer-warp').height(); 
+    $('#pagination').css('padding-bottom', paginationHeight + 'px');
+    var divTextMargin =  $('#elLogo').width(); 
+    $('#divText').css('margin-left', divTextMargin + 'px');
+    $("#myModal").css('margin-top',divHeight+'px');
+
+
+    </script>
+</body>
+</html>

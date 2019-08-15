@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Aventura en la Luna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="css/mobile.css">
+
+
+</head>
+<body >
+
+<div  class="Banner theme" id="header-wrap"  >
+<div style="float:left;" class="centered"><img src="../static/img/cinemateca-logo.png" class="Logo"  id="elLogo"></div>
+
+<div class="centered" id="textHeader"><p>Comunicaci&#243n</p></div>
+</div>
+<div class="Container_1 scrollarea-invalid " id="contenido" >
+  <div style="padding:2vw;">
+    <h1 >Cinemateca</h1>
+    <br>
+
+    <div class="text-center">
+      <div>
+        <img src="../static/img/cinemateca-cinemateca.jpg" class="hover-shadow img-rounded" style="width: 75vw;">
+      </div>
+    </div>
+
+    
+    <br>
+    <p>
+    Una vez que ingreses a la Sala, el Amigo-Guía te contará sobre el origen del cine, y se proyectará una película. Posteriormente discutirás sorbre la película en el Cine-Foro, donde hablarán tu y tus amigos sobre las cosas más importantes de la proyección.
+
+
+    </p>
+    <hr>  
+    <h2 class="text-center">Galería</h2>
+      <div class="text-center">
+      <img src="../static/img/cinemateca-1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow min-image demo">
+      <img src="../static/img/cinemateca-2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow min-image demo">
+      <img src="../static/img/cinemateca-3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow min-image demo">
+      <img src="../static/img/cinemateca-4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow min-image demo">
+      </div>
+      <br>
+      <div class="text-center">
+      <img src="../static/img/cinemateca-5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow min-image demo">
+      <img src="../static/img/cinemateca-6.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow min-image demo">
+    
+    </div>    
+    
+     
+
+
+
+  </div>
+  <!--Galeria-->
+<div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            
+              <div class="mySlides">
+              <div class="numbertext"></div>
+                <img src="../static/img/cinemateca-1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+                <img src="../static/img/cinemateca-2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+                <img src="../static/img/cinemateca-3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+                <img src="../static/img/cinemateca-4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext"></div>
+                <img src="../static/img/cinemateca-5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext"></div>
+                <img src="../static/img/cinemateca-6.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <div class = "scrollable-photos">
+            
+          
+          <!--Galeria-->
+          <div class="column">
+          <img src="../static/img/cinemateca-1.jpg" onclick="openModal();currentSlide(1)"  >
+          </div>
+
+          <div class="column">
+          <img src="../static/img/cinemateca-2.jpg" onclick="openModal();currentSlide(2)"  >
+          </div>
+
+          <div class="column">
+          <img src="../static/img/cinemateca-3.jpg" onclick="openModal();currentSlide(3)"  >
+          </div>
+
+          <div class="column">
+          <img src="../static/img/cinemateca-4.jpg" onclick="openModal();currentSlide(4)"  >
+          </div>
+
+          <div class="column">
+          <img src="../static/img/cinemateca-5.jpg" onclick="openModal();currentSlide(5)"  >
+          </div>
+
+          <div class="column">
+          <img src="../static/img/cinemateca-6.jpg" onclick="openModal();currentSlide(6)"  >
+          </div>
+
+          </div>
+            </div>
+            </div>
+
+<!--FinGaleria-->
+</div>
+
+    <footer class="footer theme" id="footer-warp">
+      <div class="container" >
+      
+    
+      <div class="text-center center-block">
+            
+            
+                <a href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/museitocaracas/" target="_blank"><i class="fa fa-facebook-square fa-3x color-white"></i></a>
+                <a href="https://twitter.com/share?url=https://twitter.com/museitocaracas&amp;text=Ven%20al%20Museo&amp;hashtags=museitocaracas" target="_blank"><i class="fa fa-twitter-square fa-3x color-white"></i></a>
+                <a href="https://www.instagram.com/museitocaracas/"><i class="fa fa-instagram fa-3x color-white"></i></a>
+                <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x color-white"></i></a>
+</div>
+    
+      </div>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+
+
+    <!--<script src="dist/js/swiper.min.js"></script>-->
+    <!-- Initialize Swiper -->
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<!-- esto debe ser arreglado-->
+    <script>
+    
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var divHeight = $('#header-wrap').height(); 
+    $('#contenido').css('margin-top', divHeight+'px');
+    var footerHeight = $('#footer-warp').height(); 
+    $('#contenido').css('padding-bottom', footerHeight + 'px');
+    var paginationHeight = 1.1 * $('#footer-warp').height(); 
+    $('#pagination').css('padding-bottom', paginationHeight + 'px');
+    var divTextMargin =  $('#elLogo').width(); 
+    $('#divText').css('margin-left', divTextMargin + 'px');
+    $("#myModal").css('margin-top',divHeight+'px');
+
+    </script>
+</body>
+</html>

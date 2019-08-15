@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Aventura en la Luna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="css/mobile.css">
+
+
+</head>
+<body >
+
+<div  class="Banner theme" id="header-wrap"  >
+<div style="float:left;" class="centered"><img src="../static/img/colores_musicales-logo.png" class="Logo"  id="elLogo"></div>
+
+<div class="centered" id="textHeader"><p>F&#237sica</p></div>
+</div>
+<div class="Container_1 scrollarea-invalid " id="contenido" >
+  <div style="padding: 2vw;">
+    <h1 >Colores Musicales</h1>
+
+    <div class="text-center">
+      <div>
+        <img src="../static/img/colores_musicales-tunel.jpg" class="hover-shadow img-rounded" style="width: 75vw;">
+      </div>
+    </div>
+    <br>
+
+
+    <p>
+    Con la manipulación de la exhibición, se presenta ante los visitantes el significado de “sonido”, empleando las notas musicales de la escala de Do mayor (o La menor), Do Re Mi Fa Sol La y Si.  
+
+    En esta exhibicón se ubica un circuito eléctrico que al ser presionado emite un sonido. Este sonido, que no es más que una onda que viaja a través de el aire cambiando la presión del mismo durante su trayecto, es una nota musical. 
+    </p>
+    <hr>    
+    <div class="embed-responsive embed-responsive-4by3" style="text-align: center;">
+    <video controls>
+    <source src="../static/video/colores_musicales.mp4" type="video/mp4">
+    </video>
+   </div>
+    <hr>
+       
+    <h3 class="text-center">¿Qué es el sonido?</h3>
+    <p>
+      El sonido no es más que las vibraciones que producen los objetos con su movimiento, que viajan hasta tus oídos a través del aire y otras sustancias, como el agua, la madera o los metales.
+    </p>
+      
+
+    <br>    
+    <h3 class="text-center">¿Qué es una nota musical?</h3>
+    <p>
+      Una nota musical es a lo que nos referimos cuando un sonido tiene una frecuencia específica y es usado en un contexto musical. Por ejemplo, la nota que conocemos por "La" tiene una frecuencia de 440 Hercios (es decir, es el sonido de algo que vibra 440 veces de un lado a otro en un segundo), y es musical porque es usada con otras notas con distinta frecuencia y duración, para crear armonías y melodías.
+
+    </p>
+    <br>
+    <h3 class="text-center">¿Cuáles son las notas musicales?</h3>
+    <p> Hay siete notas musicales principales, y doce si contamos las alteraciones de las siete principales. Las siete principales son Do, Re, Mi, Fa, Sol, La y Si. Las otras cinco reciben un nombre dependiendo de como son empleadas, pero podemos simplificar y darles un nombre provisional : Do sostenido, Re sostenido, Fa sostenido, Sol sostenido y La sostenido. ¿Alguna vez has visto un piano? Las siete notas principales son las teclas blancas, y las otras cinco, las negras.
+      
+
+    </p>
+      <div class="text-center"> 
+        <div >
+          <img src="../static/img/colores_musicales-Sean_McEntee-Piano-CC_BY_2.0.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow min-image">
+          </div>
+      </div>
+
+    
+
+
+
+    <hr>
+       <h2 class="text-center">Galer&#237a</h2>
+    <div class="embed-responsive embed-responsive-4by3" style="text-align: center;">
+    <video controls>
+    <source src="../static/video/colores_musicales_j.mp4" type="video/mp4">
+    </video>
+    </div>
+    
+        
+  </div>
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <div class="mySlides">
+              
+                <img src="../static/img/colores_musicales-Sean_McEntee-Piano-CC_BY_2.0.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+            <div class = "scrollable-photos">
+              <div class="column">
+                <img src="../static/img/colores_musicales-Sean_McEntee-Piano-CC_BY_2.0.jpg" onclick="openModal();currentSlide(1)" class="demo min-image" alt="Nature">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+</div>
+
+    <footer class="footer theme" id="footer-warp">
+      <div class="container" >
+      
+    
+     <div class="text-center center-block">
+            
+            
+                <a href="http://www.facebook.com/sharer.php?u=https://www.facebook.com/museitocaracas/" target="_blank"><i class="fa fa-facebook-square fa-3x color-white"></i></a>
+                <a href="https://twitter.com/share?url=https://twitter.com/museitocaracas&amp;text=Ven%20al%20Museo&amp;hashtags=museitocaracas" target="_blank"><i class="fa fa-twitter-square fa-3x color-white"></i></a>
+                <a href="https://www.instagram.com/museitocaracas/"><i class="fa fa-instagram fa-3x color-white"></i></a>
+                <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x color-white"></i></a>
+</div>
+    
+      </div>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+
+
+    <!--<script src="dist/js/swiper.min.js"></script>-->
+    <!-- Initialize Swiper -->
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<!-- esto debe ser arreglado-->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    var divHeight = $('#header-wrap').height(); 
+    $('#contenido').css('margin-top', divHeight+'px');
+    var footerHeight = $('#footer-warp').height(); 
+    $('#contenido').css('padding-bottom', footerHeight + 'px');
+    var paginationHeight = 1.1 * $('#footer-warp').height(); 
+    $('#pagination').css('padding-bottom', paginationHeight + 'px');
+    var divTextMargin =  $('#elLogo').width(); 
+    $('#divText').css('margin-left', divTextMargin + 'px');
+    $("#myModal").css('margin-top',divHeight+'px');
+
+
+    </script>
+</body>
+</html>
